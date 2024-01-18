@@ -40,7 +40,7 @@ int main() {
     first->data = 10;
     first->link = second;
 
-    insertend(&first);
+    insertend(&first,first);
     printlist(first);
 
     free(first);
