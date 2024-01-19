@@ -17,7 +17,7 @@ void insertend(lp *first,lp x) {
         temp->link=x->link;
         x->link=temp;
         }
-    } else {
+     else {
         temp->link = NULL;
         *first = temp;
     }
