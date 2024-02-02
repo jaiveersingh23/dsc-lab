@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
  
-// Given Node
 
 struct node {
 
@@ -10,7 +9,7 @@ struct node {
     struct node *left, *right;
 };
  
-// Function to create a new BST node
+
 
 struct node* newNode(int item)
 {
@@ -28,21 +27,19 @@ struct node* newNode(int item)
     return temp;
 }
  
-// Function to insert a new node with
-// given key in BST
+
 
 struct node* insert(struct node* node, int key)
 {
 
-    // If the tree is empty, return a new node
+    
 
     if (node == NULL)
 
         return newNode(key);
  
 
-    // Otherwise, recur down the tree
-
+    
     if (key < node->key) {
 
         node->left = insert(node->left, key);
@@ -56,12 +53,11 @@ struct node* insert(struct node* node, int key)
     }
  
 
-    // Return the node pointer
+    
 
     return node;
 }
  
-// Function to do inorder traversal of BST
 
 void inorder(struct node* root)
 {
@@ -77,67 +73,85 @@ void inorder(struct node* root)
     }
 }
  
-// Driver Code
 
+void preOrder(struct node* root)
+{
+
+    if (root != NULL) {
+
+        printf("%d ", root->key);
+
+        preOrder(root->left);
+
+        preOrder(root->right);
+
+    }
+}
+
+void postOrder(struct node* root)
+{
+
+    if (root != NULL) 
+
+    {
+
+        postOrder(root->left);
+
+        postOrder(root->right);
+
+        cout << " " << root->key;
+
+    }
+}
 int main()
 {
 
-    /* Let us create following BST 
-
-              50 
-
-           /     \ 
-
-          30      70 
-
-         /  \    /  \ 
-
-       20   40  60   80 
-
-   */
+    
 
     struct node* root = NULL;
  
 
-    // inserting value 50
+    
 
     root = insert(root, 50);
  
 
-    // inserting value 30
-
+    
     insert(root, 30);
  
 
-    // inserting value 20
+    
 
     insert(root, 20);
  
 
-    // inserting value 40
-
+    
     insert(root, 40);
  
 
-    // inserting value 70
+    
 
     insert(root, 70);
  
 
-    // inserting value 60
+    
 
     insert(root, 60);
  
 
-    // inserting value 80
+    
 
     insert(root, 80);
  
 
-    // print the BST
-
+    
+    printf("\nInorder:");
     inorder(root);
- 
+ printf("\PreOrder:");
+    preOrder(root);
 
+ printf("\PostOrder:");   
+ postOrder(root);
+ printf("\n");
     return 0;
 }
