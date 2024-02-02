@@ -138,7 +138,7 @@ void main(){
 
  {
 
- printf("1. Add\n2. Delete\n3. Display\n");
+ printf("1. Add\n2. Delete\n3. Display\n4. Exit");
 
  scanf("%d",&choice);
 
@@ -173,6 +173,9 @@ void main(){
  displayq();
 
  break;
+
+ case 4:
+ exit(0);
 
  }
 
