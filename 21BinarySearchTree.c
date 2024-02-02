@@ -99,7 +99,7 @@ void postOrder(struct node* root)
 
         postOrder(root->right);
 
-        cout << " " << root->key;
+        printf("%d ", root->key);
 
     }
 }
@@ -147,10 +147,10 @@ int main()
     
     printf("\nInorder:");
     inorder(root);
- printf("\PreOrder:");
+ printf("\nPreOrder:");
     preOrder(root);
 
- printf("\PostOrder:");   
+ printf("\nPostOrder:");   
  postOrder(root);
  printf("\n");
     return 0;
