@@ -92,7 +92,7 @@ int main() {
 
     displayQueue(&queue);
 
-    printf("Dequeued element: %d\n", dequeue(&queue));
+    printf("Deleted element: %d\n", dequeue(&queue));
 
     displayQueue(&queue);
     freeQueue(&queue);
