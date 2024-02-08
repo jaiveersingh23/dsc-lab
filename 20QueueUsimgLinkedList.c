@@ -37,12 +37,12 @@ void enqueue(Queue* queue, int data) {
         queue->rear = newNode;
     }
 
-    printf("%d enqueued to the queue\n", data);
+    printf("%d added to the queue\n", data);
 }
 
 int dequeue(Queue* queue) {
     if (isEmpty(queue)) {
-        printf("Queue is empty, cannot dequeue\n");
+        printf("Queue is empty, cannot remove\n");
         exit(EXIT_FAILURE);
     }
 
