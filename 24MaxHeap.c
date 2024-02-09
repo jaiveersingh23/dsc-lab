@@ -16,7 +16,7 @@ void insert_max_heap(element item, int n) {
         fprintf(stderr, "the heap is full.\n");
         exit(1);
     }
-    i = ++n; // new position = number of nodes + 1
+    i = ++n; 
     while ((i != 1) && (item.key > heap[i / 2].key)) {
         heap[i] = heap[i / 2];
         i /= 2;
@@ -54,7 +54,7 @@ element delete_max_heap(int n) {
 
 int main() {
     
-    element item1 = {10}; // Assuming element has a single key field
+    element item1 = {10}; 
     insert_max_heap(item1, n++);
     element item2 = {20};
     insert_max_heap(item2, n++);
