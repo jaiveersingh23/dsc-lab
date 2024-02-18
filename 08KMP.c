@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 #include<string.h>
 
 int pmatch(char *string,char *pat,int *failure)
