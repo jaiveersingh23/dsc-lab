@@ -13,7 +13,7 @@ int nfind(char *string, char *pat) {
                 ;
 
             if (j == lastp) {
-                return start; /* successful */
+                return start; 
             }
         }
     }
