@@ -26,7 +26,6 @@ void enqueue(Queue* queue, int data) {
         printf("Memory allocation failed\n");
         exit(EXIT_FAILURE);
     }
-
     
     newNode->data = data;
     newNode->next = NULL;
