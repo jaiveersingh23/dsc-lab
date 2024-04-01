@@ -76,7 +76,6 @@ void displayq(){
  printf("%d", queue[i].n);
 
  printf("\n");
-// printf("Front: %d Rear: %d\n", front, rear);
 
 }
 
