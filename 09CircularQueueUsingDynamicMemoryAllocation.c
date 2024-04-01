@@ -88,7 +88,7 @@ void main(){
  MALLOC(queue, capacity, element);
  while(1)
  {
- printf("1. Add\n2. Delete\n3. Display\n4. Exit");
+ printf("1. Add\n2. Delete\n3. Display\n4. Exit\n");
  scanf("%d",&choice);
 
  switch(choice){
