@@ -7,7 +7,6 @@ struct poly p1[10], p2[10], p3[10];
 int readPoly(struct poly p[10])
 {
     int t1, i;
-
     printf("\n\n Enter the total number of terms in the polynomial:");
     scanf("%d", &t1);
 
